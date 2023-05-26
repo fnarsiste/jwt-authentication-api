@@ -51,6 +51,7 @@ namespace JWTAuthAPI.Controllers
             List<Claim> claims = new List<Claim>
             {
                 new Claim(ClaimTypes.Name, user.Username),
+                new Claim(ClaimTypes.Role, "Admin"),
                 new Claim(ClaimTypes.Country, "BJ"),
                 new Claim(ClaimTypes.Email, "given@email.com"),
                 new Claim(ClaimTypes.MobilePhone, "+229-123"),
