@@ -1,11 +1,10 @@
 ﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace JWTAuthAPI.Controllers
 {
+    [ApiController]
     [Route("test")]
-    //[ApiController]
     [Authorize(Roles = "Admin")]
     public class TestController : ControllerBase
     {
